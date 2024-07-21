@@ -1,0 +1,40 @@
+*{
+    margin-top: 0px;
+    padding:0px;
+    font-family: ubuntu;
+}
+header,
+.links{
+    display: flex;
+}
+header{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.links{
+    padding-top: 24px;
+    gap: 1.5rem;
+    list-style:none;
+    font-size: 1.5rem;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+a:hover{
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: .90rem ;
+}
+.head-name{
+    font-size: 1.5rem;
+}
+.head-name:hover{
+    cursor: default;
+}
