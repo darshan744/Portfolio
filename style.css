@@ -1,40 +1,33 @@
-*{
-    margin-top: 0px;
-    padding:0px;
-    font-family: ubuntu;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
 }
-header,
-.links{
+
+
+.navbar{
+    background-color: #eef2f6;
+    margin: 0;
     display: flex;
+    padding: 10px;
+    justify-content: space-between;
 }
-header{
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+#name h1{
+    margin: 0;
 }
-html{
-    scroll-behavior: smooth;
-}
-.links{
-    padding-top: 24px;
-    gap: 1.5rem;
-    list-style:none;
-    font-size: 1.5rem;
-    align-items: center;
-}
-a{
-    color: black;
+
+.navigation-list {
+    display: flex;
     text-decoration: none;
-    transition: all 300ms ease;
+    list-style: none;
+    margin-right: 20px;
+    gap: 20px;
 }
-a:hover{
-    color: green;
-    text-decoration: underline;
-    text-underline-offset: .90rem ;
-}
-.head-name{
-    font-size: 1.5rem;
-}
-.head-name:hover{
-    cursor: default;
+.navigation-list li {
+    margin:10px;
+    cursor:pointer;
+    
 }
