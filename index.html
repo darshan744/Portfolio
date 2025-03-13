@@ -28,11 +28,12 @@
     <header>
       <nav>
         <div class="logo">
-          <i class="fa-solid fa-bars"></i>
+          <i onclick="showNavBar()" style="cursor: pointer;" class="fa-solid fa-bars"></i>
           <h1>DARSHAN</h1>
         </div>
         <div>
           <ul class="mobileNavLinks">
+            <i id="closeBar" onclick="hideNavBar()" style="cursor: pointer;" class="fa-solid fa-xmark"></i>
             <li><a id="home" class="navigation-list" href="#home">HOME</a></li>
             <li><a id="TechStack" class="navigation-list" href="#technologies">TechStack</a></li>
             <li><a id="Projects"class="navigation-list" href="#projects">PROJECTS</a></li>

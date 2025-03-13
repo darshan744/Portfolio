@@ -23,3 +23,13 @@ function setLink() {
 
 window.addEventListener("hashchange" , setLink);
 window.addEventListener("load" , setLink);
+
+function showNavBar() {
+    const mobileNavBar = document.querySelector(".mobileNavLinks");
+    mobileNavBar.style.display = 'block'
+}
+
+function hideNavBar(){
+    const mobileNavBar = document.querySelector(".mobileNavLinks");
+    mobileNavBar.style.display = 'none'
+}

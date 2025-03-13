@@ -86,9 +86,30 @@ footer .social-icons{
     }
     nav{
         flex-direction: column;
-        
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
     }
     .mobileNavLinks{
-        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        z-index: 9999;
+    }
+    .mobileNavLinks #closeBar{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mobileNavLinks li:first-child{
+        margin-top: 20px;
+    }
+    .mobileNavLinks li{
+       margin-bottom: 15px;
     }
 }
