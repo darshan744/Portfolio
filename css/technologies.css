@@ -42,3 +42,10 @@
     font-size: 1em;
     color: #666;
 }
+
+@media (max-width:1080px) {
+
+    .tech-list {
+        gap: 10px;
+    }
+}

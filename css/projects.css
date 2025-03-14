@@ -39,6 +39,7 @@
         border-radius: 5px;
     }
 }
+
 .description p{
     margin: 0;
     padding: 0;
@@ -61,6 +62,9 @@
     color:rgb(143, 143, 255)
 }
 @media (max-width:1080px) {
+    .tech-stack ul{
+        flex-wrap: wrap;
+    }
     .project-container{
         display: flex;
         flex-direction: column;
