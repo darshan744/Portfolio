@@ -8,13 +8,16 @@
     justify-content: center;
 }
 .contact-icon a{
-    color: red;
+    color: white;
     font-size: 24px;
     margin: 10px;
     text-decoration: none;
-    transition: transform 0.2s;
+    transition: transform 300ms;
 }
 
-.contact-icons a:hover {
+.contact-icon:hover{
+    a{
+        color: red;
+    }
     transform: scale(1.1);
 }
