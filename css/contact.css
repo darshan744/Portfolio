@@ -1,0 +1,20 @@
+#contact {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+}
+.contact-icon a{
+    color: red;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.1);
+}
