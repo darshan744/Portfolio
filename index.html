@@ -1,292 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darshan's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/technologies.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <i
-            onclick="showNavBar()"
-            style="cursor: pointer"
-            class="fa-solid fa-bars"
-          ></i>
-          <h1>DARSHAN</h1>
-        </div>
-        <div>
-          <ul class="mobileNavLinks">
-            <i
-              id="closeBar"
-              onclick="hideNavBar()"
-              style="cursor: pointer"
-              class="fa-solid fa-xmark"
-            ></i>
-            <li><a id="home" class="navigation-list" href="#home">HOME</a></li>
-            <li>
-              <a id="TechStack" class="navigation-list" href="#technologies"
-                >TechStack</a
-              >
-            </li>
-            <li>
-              <a id="Projects" class="navigation-list" href="#projects"
-                >PROJECTS</a
-              >
-            </li>
-            <li>
-              <a id="contact" class="navigation-list" href="#contact"
-                >CONTACT</a
-              >
-            </li>
-          </ul>
-          <ul class="navlinks">
-            <li><a id="home" class="navigation-list" href="#home">HOME</a></li>
-            <li>
-              <a id="TechStack" class="navigation-list" href="#technologies"
-                >TechStack</a
-              >
-            </li>
-            <li>
-              <a id="Projects" class="navigation-list" href="#projects"
-                >PROJECTS</a
-              >
-            </li>
-            <li>
-              <a id="contact" class="navigation-list" href="#contact"
-                >CONTACT</a
-              >
-            </li>
-          </ul>
-        </div>
+<html lang="en" class="bg-gray-900 text-white scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshan K | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .typing::after {
+      content: '|';
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <header class="w-full fixed top-0 left-0 z-50 bg-gray-900 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-xl font-bold">Darshan K</h1>
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        ☰
+      </button>
+      <nav id="navMenu" class="hidden md:flex gap-6">
+        <a href="#home" class="hover:text-indigo-400">Home</a>
+        <a href="#about" class="hover:text-indigo-400">About</a>
+        <a href="#projects" class="hover:text-indigo-400">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400">Contact</a>
       </nav>
-    </header>
-    <section style="padding: 10px">
-      <section id="home" class="about-container">
-        <div class="about">
-          <div class="left">
-            <div>
-              <h1 class="name">
-                Hi It's,
-                <span style="color: var(--contrast-font-color)">DARSHAN </span>
-              </h1>
-            </div>
-            <div>
-              <h3 class="role">
-                I'm a
-                <span
-                  class="typing-role"
-                  style="color: var(--contrast-font-color)"
-                ></span>
-              </h3>
-            </div>
-          </div>
-          <div class="right">
-            <div>
-              <p style="margin: 0; letter-spacing: 0.5; line-height: 1.6">
-                I’m a passionate developer with a strong foundation in both
-                frontend and backend technologies. I’m proficient in Angular,
-                Node.js, MongoDB. Constantly eager to learn and grow, I enjoy
-                building efficient, scalable applications and exploring new
-                technologies.
-              </p>
-            </div>
-            <div class="icons">
-              <a href="https://github.com/darshan744" target="_blank"
-                ><i class="icon fa-brands fa-github"> </i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/darshan-k-810972277/"
-                target="_blank"
-              >
-                <i class="icon fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://drive.google.com/file/d/1VNQ-6DfBrgGQy4DGD_NDQ4uTk7uivFg7/view?usp=sharing" target="_blank">
-                <i class="icon fa-solid fa-download"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <section id="technologies"></section>
-        <h1 style="color: var(--contrast-font-color); font-size: 25px">
-          Technologies I Know
-        </h1>
-        <div class="tech-list">
-          <div class="tech-item">
-            <i class="fab fa-html5" style="color: #e34c26; font-size: 40px"></i>
-            <p>HTML5</p>
-          </div>
-          <div class="tech-item">
-            <i
-              class="fab fa-css3-alt"
-              style="color: #1572b6; font-size: 40px"
-            ></i>
-            <p>CSS3</p>
-          </div>
-          <div class="tech-item">
-            <i
-              class="fab fa-js-square"
-              style="color: #f7df1e; font-size: 40px"
-            ></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="tech-item">
-            <i
-              class="fab fa-angular"
-              style="color: #dd1b16; font-size: 40px"
-            ></i>
-            <p>Angular</p>
-          </div>
-          <div class="tech-item">
-            <i
-              class="fab fa-node-js"
-              style="color: #68a063; font-size: 40px"
-            ></i>
-            <p>Node.js</p>
-          </div>
-          <div class="tech-item">
-            <i
-              class="fas fa-database"
-              style="color: #4db33d; font-size: 40px"
-            ></i>
-            <p>MongoDB</p>
-          </div>
-          <div class="tech-item">
-            <i class="fab fa-java" style="color: #4db33d; font-size: 40px"></i>
-            <p>Java</p>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section id="projects">
-      <h1 style="color: var(--contrast-font-color); font-size: 25px">
-        Projects
-      </h1>
-      <div class="project-container">
-        <div class="project">
-          <div class="project-image">
-            <img src="assets/booking.jpg" alt="">
-          </div>
-          <div class="project-name">
-            <h4>SLOTBOOKING PORTAL</h4>
-          </div>
-          <div class="project-details">
-            <div class="tech-stack">
-              <ul>
-                <li class="tech-stack-list">
-                  <i class="fab fa-angular"></i>Angular
-                </li>
-                <li class="tech-stack-list">
-                  <i class="fas fa-database"></i>MongoDB
-                </li>
-                <li class="tech-stack-list">
-                  <i class="fas fa-server"></i>ExpressJS
-                </li>
-                <li class="tech-stack-list">
-                  <i class="fab fa-node-js"></i> NodeJS
-                </li>
-              </ul>
-            </div>
-            <hr>
-            <div class="description">
-              <p>
-                Designed and developed a comprehensive portal for the training
-                department to streamline the management and organization of
-                training events.
-              </p>
-            </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <a href="#home" class="block py-1 hover:text-indigo-400">Home</a>
+      <a href="#about" class="block py-1 hover:text-indigo-400">About</a>
+      <a href="#projects" class="block py-1 hover:text-indigo-400">Projects</a>
+      <a href="#contact" class="block py-1 hover:text-indigo-400">Contact</a>
+    </div>
+  </header>
 
-            <hr>
-            <div class="source-code">
-            <a href="https://github.com/darshan744/SlotBookingPortal">Frontend</a>
-            <a href="https://github.com/darshan744/SlotBookingPortalBackend">Backend</a>
-          </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-image">
-            <!-- 1P3pvBTeq3-u9-IiP-vYPo6O124YyTrqT -->
-            <img src="assets/todo.png" alt="">
-          </div>
-          <div class="project-name">
-            <h4>TODOAPP</h4>
-          </div>
-          <div class="project-details">
-            <div class="tech-stack">
-              <ul>
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-css3-alt"></i> CSS</li>
-                <li><i class="fab fa-js-square"></i> JavaScript</li>
-              </ul>
-            </div>
-            <hr>
-            <div class="description">
-              <p>
-                Designed and developed a user-friendly To-Do application to help
-                users organize tasks, set priorities, and manage deadlines
-                efficiently. The app features an intuitive interface for creating,
-                editing, and deleting tasks
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="source-code">
-            <a href="https://github.com/darshan744/Todo-List">Source code</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact-div">
-      <h2 style="color: red">Contact Me</h2>
-      <div class="contact-icons">
-        <div class="contact-icon">
-          <a href="mailto:darshankumaravelk@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-        </div>
-        <div class="contact-icon">
-          <a href="https://www.linkedin.com/in/darshan-k-810972277/"target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </div>
-        <div class="contact-icon">
-          <a href="https://github.com/darshan744" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
-    </section>
+  <!-- Landing -->
+  <section id="home" class="h-screen flex items-center justify-center text-center px-4 pt-20">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Hi, I’m <span class="text-indigo-400 typing"
+          id="typedName"></span></h1>
+      <p class="text-lg text-gray-400">An Angular Developer focused on building scalable web applications.</p>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Darshan K. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://github.com/darshan744" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/darshan-k-810972277/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <p class="text-gray-300 mb-4">
+      I'm a passionate Angular + Node developer (fresher) who enjoys building full-stack web apps.
+      I'm actively learning system design, backend frameworks, and integrating scalable architecture in real projects.
+    </p>
+    <p class="text-gray-300">
+      I love solving problems, contributing to open-source (where possible), and currently experimenting with
+      microservices and production-grade code for my personal projects.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+    <div id="projectGrid" class="grid md:grid-cols-2 gap-6"></div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="mb-2">Contact Me: <a href="mailto:darshan@example.com"
+          class="text-indigo-400 underline">darshankumaravelk@gmail.com</a></p>
+      <div class="flex justify-center gap-4 mt-2">
+        <a href="https://github.com/darshan744" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://linkedin.com/in/" target="_blank" class="hover:text-white">LinkedIn</a>
       </div>
-    </footer>
-  </body>
-  <script src="index.js"></script>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js">
+   
+  </script>
+
+</body>
+
 </html>
+
